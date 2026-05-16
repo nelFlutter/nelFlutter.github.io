@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nelson AGOSSOU — Ingénieur Big Data · IA · Architecture SI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">NA</span>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" onclick="toggleMenu()">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-greeting">Bonjour, je suis</p>
+        <h1 class="hero-name">Nelson <span class="accent">AGOSSOU</span></h1>
+        <p class="hero-title">Ingénieur Big Data · IA · Architecture SI</p>
+        <p class="hero-desc">
+          Je conçois des systèmes data distribués, des pipelines temps réel et des applications
+          mobiles à impact. En alternance chez <strong>GlobalOptim</strong> (Nice), je travaille
+          sur des plateformes Big Data, des LLM souverains déployés <em>on-premise</em>
+          et des architectures cloud GCP.
+        </p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary">Me contacter</a>
+          <a href="#projects" class="btn btn-outline">Voir mes projets</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <img src="assets/photo.jpg" alt="Nelson AGOSSOU" />
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll"><span>&#8595;</span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">À propos</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Je suis ingénieur logiciel spécialisé en <strong>Big Data, IA et architecture
+            des systèmes d'information</strong>, actuellement en Master of Science à
+            <strong>Epitech Nice</strong> et en alternance chez <strong>GlobalOptim</strong>.
+          </p>
+          <p>
+            Mon parcours m'a amené à piloter une plateforme Big Data regroupant plus de quinze
+            services containerisés, à concevoir des pipelines CDC temps réel sur Google Cloud
+            Platform, et à développer des applications mobiles et desktop Flutter embarquant
+            des LLM déployés <em>on-premise</em> — sans jamais transmettre les données vers
+            des services cloud externes.
+          </p>
+          <p>
+            Ce qui me motive : construire des systèmes qui ont un impact réel, que ce soit pour
+            l'inclusion financière en Afrique subsaharienne ou pour rendre la Business Intelligence
+            accessible aux décideurs non techniques.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="info-card">
+            <div class="info-icon-wrap">MSc</div>
+            <div>
+              <strong>MSc Architecture SI</strong>
+              <p>Epitech Nice · 2024 – 2026</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon-wrap">GO</div>
+            <div>
+              <strong>GlobalOptim</strong>
+              <p>Ingénieur Software · Nice, France</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon-wrap">FR</div>
+            <div>
+              <strong>Nice, France</strong>
+              <p>Bénin d'origine</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon-wrap">EN</div>
+            <div>
+              <strong>Langues</strong>
+              <p>Français · Anglais professionnel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Expérience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Oct. 2024 — Sept. 2026</div>
+          <div class="timeline-card">
+            <h3>Ingénieur Software — Alternance</h3>
+            <p class="company">GlobalOptim · Nice, France</p>
+            <div class="timeline-projects">
+
+              <div class="exp-block">
+                <h4>Applications mobiles Flutter</h4>
+                <p>
+                  Développement de <strong>Gobi Agent</strong> et <strong>GobiPay POS</strong>,
+                  deux applications Flutter pour les agents mobile money et les commerçants africains.
+                  Intégration de codes USSD via Platform Channels Android, notifications push Firebase
+                  FCM, architecture GetX MVC. Publication automatisée sur Google Play et App Store
+                  via pipeline CI/CD Codemagic.
+                </p>
+                <div class="tags">
+                  <span>Flutter</span><span>GetX</span><span>Firebase</span>
+                  <span>Codemagic</span><span>Android Platform Channels</span>
+                </div>
+              </div>
+
+              <div class="exp-block">
+                <h4>Plateforme Big Data GDAI CNP — pilotage 12 mois</h4>
+                <p>
+                  Pilotage technique d'une plateforme Big Data modulaire regroupant
+                  <strong>15+ services containerisés</strong> : CDC Debezium & Kafka,
+                  transformation dbt & Apache Spark, stockage MinIO / SeaweedFS / Apache
+                  Doris / ClickHouse, fédération Trino, gouvernance OpenMetadata,
+                  monitoring Grafana / Prometheus / ELK Stack, SSO Keycloak OAuth2.
+                </p>
+                <div class="tags">
+                  <span>Kafka</span><span>Debezium</span><span>Spark</span><span>dbt</span>
+                  <span>Apache Doris</span><span>Trino</span><span>MinIO</span>
+                  <span>Docker</span><span>Keycloak</span>
+                </div>
+              </div>
+
+              <div class="exp-block">
+                <h4>GDAI GenBI — BI générative souveraine (Mobile + Windows)</h4>
+                <p>
+                  Développement de l'application <strong>mobile Flutter</strong> et de la
+                  <strong>version Windows (WinUI 3)</strong> d'une plateforme de Business
+                  Intelligence générative. Les décideurs interrogent leurs données en langage
+                  naturel ; un LLM local (Ollama / vLLM) génère les requêtes SQL et retourne
+                  des graphiques Vega-Lite rendus via une WebView embarquée. Déploiement
+                  <em>on-premise</em>, zéro dépendance cloud.
+                </p>
+                <div class="tags">
+                  <span>Flutter</span><span>WinUI 3</span><span>Vega-Lite</span>
+                  <span>Ollama</span><span>vLLM</span><span>Keycloak SSO</span>
+                </div>
+              </div>
+
+              <div class="exp-block">
+                <h4>Pipeline CDC temps réel — Google Cloud Platform</h4>
+                <p>
+                  Pipeline Change Data Capture en temps réel : Debezium &rarr; Google Pub/Sub
+                  &rarr; Apache Beam (Dataflow) &rarr; BigQuery. Conception d'un mécanisme
+                  de <strong>schema evolution automatique</strong> gérant les
+                  <code>ALTER TABLE</code> sans interruption du flux de données.
+                </p>
+                <div class="tags">
+                  <span>GCP</span><span>Pub/Sub</span><span>Dataflow</span>
+                  <span>Apache Beam</span><span>BigQuery</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Avr. 2022 — Sept. 2024</div>
+          <div class="timeline-card">
+            <h3>Développeur Flutter</h3>
+            <p class="company">GlobalOptim · Cotonou, Bénin</p>
+            <p>
+              Développement d'applications mobiles cross-platform (Flutter / Dart) pour des
+              solutions de paiement mobile en Afrique. Collaboration avec des équipes
+              pluridisciplinaires, revue de code et accompagnement de développeurs juniors.
+            </p>
+            <div class="tags">
+              <span>Flutter</span><span>Dart</span><span>Mobile Money</span><span>API REST</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projets</h2>
+
+      <h3 class="subsection-title">En entreprise — GlobalOptim</h3>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">Mobile</div>
+            <div>
+              <h3>Gobi Agent & GobiPay POS</h3>
+              <p class="project-meta">Applications mobiles · Afrique subsaharienne</p>
+            </div>
+          </div>
+          <p>
+            Deux applications Flutter destinées aux agents mobile money et aux commerçants.
+            Gobi Agent permet de traiter des demandes clients en temps réel et d'exécuter
+            des codes USSD sans quitter l'application. GobiPay POS offre un tableau de bord
+            analytique, un encaissement par QR code multi-opérateurs et une gestion des stocks.
+            Publication sur Google Play et App Store via Codemagic CI/CD.
+          </p>
+          <div class="tags">
+            <span>Flutter</span><span>GetX</span><span>Firebase FCM</span>
+            <span>USSD Android Native</span><span>Codemagic</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">Data</div>
+            <div>
+              <h3>Plateforme GDAI CNP</h3>
+              <p class="project-meta">Big Data · Pilotage 12 mois</p>
+            </div>
+          </div>
+          <p>
+            Plateforme Big Data modulaire regroupant plus de quinze services containerisés,
+            couvrant l'ingestion (Kafka / Debezium), la transformation (Spark / dbt),
+            le stockage (MinIO, Apache Doris, ClickHouse), la fédération (Trino),
+            la gouvernance (OpenMetadata) et le monitoring (Grafana / Prometheus / ELK).
+            Chaque outil est isolé dans son propre docker-compose avec un fichier
+            d'environnement indépendant.
+          </p>
+          <div class="tags">
+            <span>Kafka</span><span>Debezium</span><span>Spark</span><span>dbt</span>
+            <span>Apache Doris</span><span>Trino</span><span>MinIO</span><span>Docker</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">IA</div>
+            <div>
+              <h3>GDAI GenBI</h3>
+              <p class="project-meta">BI générative souveraine · Mobile + Windows</p>
+            </div>
+          </div>
+          <p>
+            Interface mobile (Flutter) et desktop (WinUI 3) d'une plateforme de Business
+            Intelligence générative. Les décideurs posent leurs questions en langage naturel ;
+            un LLM local génère le SQL correspondant et retourne les résultats sous forme de
+            graphiques Vega-Lite rendus dans une WebView. Tout est déployé on-premise —
+            aucune donnée ne quitte l'infrastructure du client.
+          </p>
+          <div class="tags">
+            <span>Flutter</span><span>WinUI 3</span><span>Ollama</span>
+            <span>Vega-Lite</span><span>Keycloak SSO</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">GCP</div>
+            <div>
+              <h3>Pipeline CDC — GCP</h3>
+              <p class="project-meta">Streaming temps réel · Google Cloud</p>
+            </div>
+          </div>
+          <p>
+            Pipeline de Change Data Capture en temps réel : Debezium capte les modifications
+            en base, les publie dans Google Pub/Sub, Apache Beam (Dataflow) les traite et
+            les charge dans BigQuery. Point technique clé : conception d'un mécanisme de
+            schema evolution automatique gérant les <code>ALTER TABLE</code> sans interruption
+            du pipeline.
+          </p>
+          <div class="tags">
+            <span>Debezium</span><span>Pub/Sub</span><span>Apache Beam</span>
+            <span>Dataflow</span><span>BigQuery</span>
+          </div>
+        </div>
+
+      </div>
+
+      <h3 class="subsection-title" style="margin-top: 48px;">Académiques — Epitech</h3>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">ML</div>
+            <div>
+              <h3>Alertify</h3>
+              <p class="project-meta">T-AIA-911 · Détection de risques naturels</p>
+            </div>
+          </div>
+          <p>
+            Système de détection et d'alerte en temps réel pour les risques naturels
+            (séismes, inondations, liquéfaction). Architecture microservices : ingestion
+            des données sismiques USGS, modèles ML IsolationForest + XGBoost &times; 5
+            déployés via FastAPI, alertes multi-canaux via Kafka. Pipeline MLflow pour
+            le suivi des expériences. Couverture de tests &ge; 90 %.
+          </p>
+          <div class="project-role">Rôle : stack data complète, modèles ML, pipeline MLflow</div>
+          <div class="tags">
+            <span>FastAPI</span><span>XGBoost</span><span>MLflow</span>
+            <span>Kafka</span><span>Supabase</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">BD</div>
+            <div>
+              <h3>IMO-France</h3>
+              <p class="project-meta">Big Data · Marché immobilier français</p>
+            </div>
+          </div>
+          <p>
+            Plateforme complète d'analyse du marché immobilier français sur des sources
+            publiques (DVF, INSEE, IGN, SITADEL — plus de 500 000 entrées). Pipeline
+            d'ingestion Kafka &rarr; PostgreSQL, LLM local Text-to-SQL via Ollama + Qdrant
+            (RAG), interface cartographique interactive (carte choroplèthe).
+          </p>
+          <div class="project-role">Rôle : développement intégral — data, backend, frontend</div>
+          <div class="tags">
+            <span>Kafka</span><span>PostgreSQL</span><span>Ollama</span>
+            <span>Qdrant</span><span>Django</span><span>Streamlit</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">K8s</div>
+            <div>
+              <h3>KubeQuest</h3>
+              <p class="project-meta">T-CLO-902 · Déploiement Kubernetes</p>
+            </div>
+          </div>
+          <p>
+            Application Node.js + Redis déployée sur Kubernetes. Implémentation des
+            manifests K8s : Deployment, Service, ConfigMap, Secret, PVC et
+            HorizontalPodAutoscaler (auto-scaling CPU &gt; 60 %). Déploiement sur
+            minikube, AWS EKS et Azure AKS avec les mêmes manifests.
+          </p>
+          <div class="project-role">Rôle : architecture K8s, manifests, déploiement cloud</div>
+          <div class="tags">
+            <span>Kubernetes</span><span>Docker</span><span>Node.js</span>
+            <span>HPA</span><span>AWS EKS</span><span>Azure AKS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Compétences</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>Développement mobile &amp; desktop</h3>
+          <div class="tags">
+            <span>Flutter</span><span>Dart</span><span>GetX</span><span>Firebase Auth</span>
+            <span>Firebase FCM</span><span>WinUI 3</span><span>Codemagic</span><span>WebView</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Data Engineering</h3>
+          <div class="tags">
+            <span>Apache Kafka</span><span>Debezium</span><span>Apache Spark</span>
+            <span>dbt</span><span>DLT</span><span>Apache NiFi</span><span>Apache Airflow</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Stockage &amp; Lakehouse</h3>
+          <div class="tags">
+            <span>MinIO</span><span>SeaweedFS</span><span>Apache Doris</span>
+            <span>ClickHouse</span><span>PostgreSQL</span><span>BigQuery</span><span>Qdrant</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Cloud GCP</h3>
+          <div class="tags">
+            <span>Pub/Sub</span><span>Dataflow</span><span>Apache Beam</span>
+            <span>BigQuery</span><span>Cloud Storage</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>IA &amp; LLM</h3>
+          <div class="tags">
+            <span>Ollama</span><span>vLLM</span><span>MLflow</span>
+            <span>XGBoost</span><span>Qdrant</span><span>RAG</span><span>Vega-Lite</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>DevOps &amp; Infrastructure</h3>
+          <div class="tags">
+            <span>Docker</span><span>Kubernetes</span><span>Keycloak</span>
+            <span>Grafana</span><span>Prometheus</span><span>ELK Stack</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <div class="tags">
+            <span>FastAPI</span><span>Django</span><span>Node.js</span>
+            <span>Streamlit</span><span>API REST</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Gouvernance &amp; Monitoring</h3>
+          <div class="tags">
+            <span>OpenMetadata</span><span>Trino</span><span>Apache Hive</span>
+            <span>Grafana</span><span>Prometheus</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-subtitle">Disponible pour des opportunités en Data Engineering, Architecture SI et IA.</p>
+      <div class="contact-grid">
+        <a href="mailto:nelsmallchrist@gmail.com" class="contact-card">
+          <div class="contact-icon-wrap">@</div>
+          <strong>Email</strong>
+          <p>nelsmallchrist@gmail.com</p>
+        </a>
+        <a href="https://linkedin.com/in/nelson-agossou5b3b7b200" target="_blank" class="contact-card">
+          <div class="contact-icon-wrap">in</div>
+          <strong>LinkedIn</strong>
+          <p>nelson-agossou5b3b7b200</p>
+        </a>
+        <a href="https://github.com/nelFlutter" target="_blank" class="contact-card">
+          <div class="contact-icon-wrap">gh</div>
+          <strong>GitHub</strong>
+          <p>github.com/nelFlutter</p>
+        </a>
+        <div class="contact-card no-link">
+          <div class="contact-icon-wrap">FR</div>
+          <strong>Localisation</strong>
+          <p>Nice, Provence-Alpes-Côte d'Azur</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Nelson AGOSSOU</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
