@@ -14,10 +14,10 @@ function toggleMenu() {
     menu.id = 'mobile-menu';
     menu.className = 'mobile-menu';
     menu.innerHTML = `
-      <a href="#about" onclick="closeMenu()">À propos</a>
-      <a href="#experience" onclick="closeMenu()">Expérience</a>
-      <a href="#projects" onclick="closeMenu()">Projets</a>
-      <a href="#skills" onclick="closeMenu()">Compétences</a>
+      <a href="#about" onclick="closeMenu()">About</a>
+      <a href="#experience" onclick="closeMenu()">Experience</a>
+      <a href="#projects" onclick="closeMenu()">Projects</a>
+      <a href="#skills" onclick="closeMenu()">Skills</a>
       <a href="#contact" onclick="closeMenu()">Contact</a>
     `;
     document.body.appendChild(menu);
