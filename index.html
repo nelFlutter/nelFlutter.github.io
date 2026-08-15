@@ -247,9 +247,11 @@
             compliance (max drawdown, daily loss limits) before any strategy is accepted. Trading
             literature and prop-firm documentation are ingested through a <strong>Qdrant RAG</strong>
             pipeline rather than stuffed into raw context. Execution runs on
-            <strong>MetaTrader 5</strong>; strategies are validated with <strong>vectorbt</strong>
-            backtesting and explicit money-management / MAR-ratio rules before any capital is
-            risked. Built from scratch, with every line of code understood and defensible.
+            <strong>MetaTrader 5</strong>, with <strong>vectorbt</strong> backtesting and explicit
+            money-management / MAR-ratio rules intended to gate any capital at risk.
+            <strong>Work in progress</strong>: the implementation isn't complete and no strategy
+            has been validated end-to-end yet — every line written so far is understood and
+            defensible, but there's no result to report.
           </p>
           <div class="project-role">Role: architecture, agent orchestration, RAG pipeline, FTMO compliance logic</div>
           <div class="tags">
@@ -269,9 +271,10 @@
           <p>
             A dual-model ML signal pipeline covering feature engineering, model training and
             backtesting for a systematic gold (XAU) strategy, with long-only, short-only and
-            combined backtest variants. Backtested equity curve: <strong>+2.97% over Aug. 2025 –
-            Feb. 2026</strong> on hourly bars: an honest, traceable backtest result, not a live or
-            FTMO-verified track record.
+            combined backtest variants over Aug. 2025 – Feb. 2026 on hourly bars. Backtest result:
+            <strong>not profitable</strong> — an honest, traceable negative result, not a live or
+            FTMO-verified track record. Kept here as a documented iteration in an ongoing
+            systematic-strategy research process, not a finished product.
           </p>
           <div class="project-role">Role: feature engineering, ML signal generation, backtesting infrastructure</div>
           <div class="tags">
@@ -395,10 +398,32 @@
 
         <div class="project-card">
           <div class="project-header">
+            <div class="project-icon">NLP</div>
+            <div>
+              <h3>Travel Order Resolver</h3>
+              <p class="project-meta">T-AIA-911 · NLP for rail travel requests</p>
+            </div>
+          </div>
+          <p>
+            An NLP pipeline that interprets French natural-language rail travel requests. Four
+            stages: French-language detection, entity extraction of departure/arrival cities
+            (compared <strong>Spacy</strong> and <strong>BERT</strong> approaches), resolution of
+            place names to actual SNCF stations (GTFS data), and pathfinding to compute the route
+            between them. Evaluated on classification accuracy, NER precision/recall/F1, exact-match
+            on full trip resolution, and robustness to spelling errors.
+          </p>
+          <div class="project-role">Role: full NLP pipeline (language detection, entity extraction, station resolution, pathfinding)</div>
+          <div class="tags">
+            <span>Spacy</span><span>BERT</span><span>NLP</span><span>Python</span><span>GTFS/SNCF</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
             <div class="project-icon">ML</div>
             <div>
               <h3>Alertify</h3>
-              <p class="project-meta">T-AIA-911 · Natural-hazard detection</p>
+              <p class="project-meta">Natural-hazard detection</p>
             </div>
           </div>
           <p>
