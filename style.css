@@ -534,6 +534,21 @@ img { max-width: 100%; display: block; }
   margin-bottom: 4px;
 }
 
+.project-link {
+  font-size: 0.82rem;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+.project-link a {
+  color: var(--navy);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.project-link a:hover { color: var(--accent); }
+
 /* ============================================================
    SKILLS
    ============================================================ */
