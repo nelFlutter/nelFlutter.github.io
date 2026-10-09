@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nelson AGOSSOU · Software Engineer · Systematic Trading · Big Data & AI</title>
+  <title>Nelson AGOSSOU · Information Systems Architect · Project Lead · Data & AI Engineer</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -31,14 +31,15 @@
       <div class="hero-text">
         <p class="hero-greeting">Hi, I'm</p>
         <h1 class="hero-name">Nelson <span class="accent">AGOSSOU</span></h1>
-        <p class="hero-title">Software Engineer · Systematic Trading · Big Data & AI</p>
+        <p class="hero-title">Information Systems Architect · Project Lead · Data & AI Engineer</p>
         <p class="hero-desc">
-          I design distributed data systems, real-time pipelines and mobile apps that ship to
-          production, and I've traded the markets independently since 2021. At
-          <strong>GlobalOptim</strong> (Nice), I build Big Data platforms, sovereign on-premise
-          LLM applications and GCP cloud architectures. On the side, I'm building a systematic,
-          AI-assisted trading system, in collaboration with computer-science PhD researchers met
-          at VivaTech Paris and the WAIB Summit in Monaco.
+          I design and lead data and AI platforms that companies own outright: real-time and
+          batch pipelines, federated and governed data, on-premise or cloud. At
+          <strong>GlobalOptim</strong> (Nice), I lead the GDAI Data Stack lakehouse, build
+          multi-cloud CDC pipelines on GCP and Azure, and ship sovereign on-premise LLM
+          applications. On the side, I've traded the markets independently since 2021 and I'm
+          building a systematic, AI-assisted trading system, in collaboration with
+          computer-science PhD researchers met at VivaTech Paris and the WAIB Summit in Monaco.
         </p>
         <div class="hero-btns">
           <a href="#contact" class="btn btn-primary">Get in touch</a>
@@ -61,15 +62,18 @@
       <div class="about-grid">
         <div class="about-text">
           <p>
-            I'm a software engineer specialized in <strong>Big Data, AI and information systems
-            architecture</strong>, currently pursuing an MSc at <strong>Epitech Nice</strong> and
-            working as a software engineer at <strong>GlobalOptim</strong>.
+            I'm an <strong>Information Systems Architect and Project Lead</strong> specialized in
+            <strong>Big Data, AI and distributed systems</strong>, working at
+            <strong>GlobalOptim</strong> (Nice). I hold an MSc in Information Systems Architecture
+            from <strong>Epitech Nice</strong> (2026).
           </p>
           <p>
-            My work has taken me from piloting a Big Data platform of fifteen-plus containerized
-            services, to designing real-time CDC pipelines on Google Cloud Platform, to building
-            mobile and desktop Flutter applications embedding on-premise LLMs, without ever
-            sending data to external cloud services.
+            Over four years, my work has taken me from shipping mobile payment apps for Africa and
+            its diaspora, to leading a lakehouse platform of fifteen-plus containerized services,
+            to building real-time and batch pipelines across GCP, Azure and on-premise, and
+            applications embedding on-premise LLMs, without ever sending data to external cloud
+            services. I package that work so it can be reused: a new client is deployed from a
+            configuration file, not rebuilt tool by tool.
           </p>
           <p>
             I've also traded the markets independently since 2021, and I'm now applying the same
@@ -92,7 +96,21 @@
             <div class="info-icon-wrap">GO</div>
             <div>
               <strong>GlobalOptim</strong>
-              <p>Software Engineer · Nice, France</p>
+              <p>IS Architect &amp; Project Lead · Nice, France</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon-wrap">AW</div>
+            <div>
+              <strong>Awards</strong>
+              <p>Top 5 Innovation in France (IMT Bercy) · CES Las Vegas 2024</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon-wrap">SEC</div>
+            <div>
+              <strong>Certification</strong>
+              <p>Web platform security · vulnerabilities &amp; risks</p>
             </div>
           </div>
           <div class="info-card">
@@ -122,34 +140,58 @@
 
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <div class="timeline-date">Oct. 2024 — Sept. 2026</div>
+          <div class="timeline-date">Oct. 2024 — Present</div>
           <div class="timeline-card">
-            <h3>Software Engineer · Work-Study</h3>
-            <p class="company">GlobalOptim · Nice, France</p>
+            <h3>Information Systems Architect · Big Data &amp; AI</h3>
+            <p class="company">GlobalOptim · Nice, France · Data &amp; AI consulting</p>
             <div class="timeline-projects">
 
               <div class="exp-block">
-                <h4>Real-Time CDC Pipeline · Google Cloud Platform</h4>
+                <h4>Data Collection · CDC &amp; APIs (GCP · Azure · VM)</h4>
                 <p>
-                  Real-time Change Data Capture pipeline built with Debezium, Google Pub/Sub,
-                  Apache Beam (Dataflow) and BigQuery. Key engineering point: designed an
+                  Change Data Capture from PostgreSQL, SQL Server and Oracle with Debezium.
+                  <strong>GCP</strong>: changes flow through Pub/Sub and Apache Beam (Dataflow)
+                  into BigQuery in under 15 seconds, with an
                   <strong>automatic schema evolution mechanism</strong> handling live
                   <code>ALTER TABLE</code> statements without pipeline downtime.
+                  <strong>Azure</strong>: three Debezium Server instances stream to Azure Event
+                  Hubs over the Kafka protocol. <strong>VM</strong>: a Debezium / Kafka Connect
+                  chain on AWS EC2 with TLS and SSO. An ETL on Cloud Run also collects REST API
+                  data (API key, OAuth2, pagination) into BigQuery.
                 </p>
                 <div class="tags">
-                  <span>GCP</span><span>Pub/Sub</span><span>Apache Beam</span>
-                  <span>Dataflow</span><span>BigQuery</span>
+                  <span>Debezium</span><span>Pub/Sub</span><span>Dataflow</span>
+                  <span>BigQuery</span><span>Azure Event Hubs</span><span>AWS EC2</span>
+                  <span>Cloud Run</span>
                 </div>
               </div>
 
               <div class="exp-block">
-                <h4>GDAI GenBI · Sovereign Generative BI (Mobile + Windows)</h4>
+                <h4>Transformation &amp; BI · Bronze / Silver / Gold</h4>
+                <p>
+                  SQL transformations in a medallion architecture: a multi-source,
+                  multi-destination Dataform project, dbt models, scheduled BigQuery queries
+                  (silver MERGE every 5 minutes) and continuous queries. Real-time KPIs with
+                  PySpark Structured Streaming from Kafka into Apache Doris, and telecom business
+                  SQL views (revenue per plan, usage per subscriber) for Superset. Pipelines are
+                  <strong>driven by a configuration catalogue</strong>: a source or a destination
+                  is added without touching code, with automatic resume and retry.
+                </p>
+                <div class="tags">
+                  <span>Dataform</span><span>dbt</span><span>PySpark</span>
+                  <span>Structured Streaming</span><span>Apache Doris</span><span>Superset</span>
+                </div>
+              </div>
+
+              <div class="exp-block">
+                <h4>GDAI Decision Intelligence (GenBI) · Generative BI (Mobile + Windows)</h4>
                 <p>
                   Built the <strong>Flutter mobile</strong> app and the
                   <strong>Windows client (WinUI 3, C#)</strong> of a generative Business
-                  Intelligence platform. Decision-makers query their data in natural language; a
-                  local LLM (Ollama / vLLM) generates the SQL and returns Vega-Lite charts
-                  rendered in an embedded WebView. Fully on-premise, with zero cloud dependency.
+                  Intelligence platform. Decision-makers query their data in natural language; an
+                  LLM generates the SQL and returns Vega-Lite charts rendered in an embedded
+                  WebView. It can run fully on-premise with a local LLM (Ollama / vLLM), so data
+                  never has to leave the client's infrastructure.
                 </p>
                 <div class="tags">
                   <span>Flutter</span><span>WinUI 3</span><span>Vega-Lite</span>
@@ -158,18 +200,36 @@
               </div>
 
               <div class="exp-block">
-                <h4>GDAI CNP Big Data Platform · 12-Month Technical Ownership</h4>
+                <h4>GDAI Data Stack · Lakehouse Platform · Project Lead &amp; Architecture</h4>
                 <p>
-                  Technical ownership of a modular Big Data platform spanning
+                  Led the platform from a two-month comparative study of Big Data tools, through
+                  the architecture decisions, to the industrialisation of
                   <strong>15+ containerized services</strong>: CDC via Debezium & Kafka,
-                  transformation via dbt & Apache Spark, storage on MinIO / SeaweedFS / Apache
-                  Doris / ClickHouse, federation via Trino, governance via OpenMetadata,
-                  monitoring via Grafana / Prometheus / ELK Stack, SSO via Keycloak OAuth2.
+                  transformation via dbt & Apache Spark, orchestration via Airflow, storage on
+                  MinIO / SeaweedFS / Apache Doris / ClickHouse, federation via Trino, governance
+                  via OpenMetadata, monitoring via Grafana / Prometheus / ELK Stack, and unified
+                  Keycloak SSO across every service. The result is a library of ready-to-deploy
+                  services, now the <strong>foundation for client engagements</strong>.
                 </p>
                 <div class="tags">
                   <span>Kafka</span><span>Debezium</span><span>Spark</span><span>dbt</span>
-                  <span>Apache Doris</span><span>Trino</span><span>MinIO</span>
-                  <span>Docker</span><span>Keycloak</span>
+                  <span>Airflow</span><span>Apache Doris</span><span>Trino</span><span>MinIO</span>
+                  <span>OpenMetadata</span><span>Keycloak SSO</span>
+                </div>
+              </div>
+
+              <div class="exp-block">
+                <h4>DevOps &amp; IaC · Docker · Kubernetes · Terraform</h4>
+                <p>
+                  Each service isolated in its own docker-compose stack, fully configured through
+                  an environment file. <strong>Helm charts for 13 services</strong> under a GDAI
+                  deployment standard: a client is deployed from a values file, without editing
+                  templates, and Spark jobs run on Kubernetes via Airflow. Terraform modules for
+                  Azure (Event Hubs, SAS rules) and GCP (BigQuery, Pub/Sub, Cloud Run, IAM).
+                </p>
+                <div class="tags">
+                  <span>Docker</span><span>Kubernetes</span><span>Helm</span>
+                  <span>Terraform</span><span>Azure</span><span>GCP</span>
                 </div>
               </div>
 
@@ -334,16 +394,17 @@
           <div class="project-header">
             <div class="project-icon">Data</div>
             <div>
-              <h3>GDAI CNP Platform</h3>
-              <p class="project-meta">Big Data · 12-month technical ownership</p>
+              <h3>GDAI Data Stack</h3>
+              <p class="project-meta">Lakehouse platform · Project lead &amp; architecture</p>
             </div>
           </div>
           <p>
-            A modular Big Data platform spanning fifteen-plus containerized services, covering
+            A modular lakehouse platform spanning fifteen-plus containerized services, covering
             ingestion (Kafka / Debezium), transformation (Spark / dbt), storage (MinIO, Apache
-            Doris, ClickHouse), federation (Trino), governance (OpenMetadata) and monitoring
-            (Grafana / Prometheus / ELK). Each tool isolated in its own docker-compose stack with
-            an independent environment file.
+            Doris, ClickHouse), federation (Trino), governance (OpenMetadata), monitoring
+            (Grafana / Prometheus / ELK) and unified Keycloak SSO. Led from tool selection to
+            production; now the foundation for client engagements, replacing manual,
+            tool-by-tool installation.
           </p>
           <div class="tags">
             <span>Kafka</span><span>Debezium</span><span>Spark</span><span>dbt</span>
@@ -353,17 +414,58 @@
 
         <div class="project-card">
           <div class="project-header">
+            <div class="project-icon">IaC</div>
+            <div>
+              <h3>GDAI Deployment Standard</h3>
+              <p class="project-meta">Kubernetes · Helm · Terraform</p>
+            </div>
+          </div>
+          <p>
+            Helm charts for 13 services under one deployment standard: a client is deployed from
+            a values file, without editing templates. Spark jobs run on Kubernetes via Airflow.
+            Terraform modules provision Azure (Event Hubs, SAS rules) and GCP (BigQuery, Pub/Sub,
+            Cloud Run, IAM).
+          </p>
+          <div class="tags">
+            <span>Kubernetes</span><span>Helm</span><span>Terraform</span>
+            <span>Airflow</span><span>Azure</span><span>GCP</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">BI</div>
+            <div>
+              <h3>Medallion Transformation &amp; BI</h3>
+              <p class="project-meta">Batch &amp; streaming · Bronze / Silver / Gold</p>
+            </div>
+          </div>
+          <p>
+            SQL transformations with Dataform, dbt and scheduled BigQuery queries (silver MERGE
+            every 5 minutes), plus real-time KPIs with PySpark Structured Streaming from Kafka
+            into Apache Doris and business views for Superset. Pipelines are driven by a
+            configuration catalogue: a source or a destination is added without touching code.
+          </p>
+          <div class="tags">
+            <span>Dataform</span><span>dbt</span><span>PySpark</span>
+            <span>BigQuery</span><span>Apache Doris</span><span>Superset</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
             <div class="project-icon">AI</div>
             <div>
-              <h3>GDAI GenBI</h3>
-              <p class="project-meta">Sovereign generative BI · Mobile + Windows</p>
+              <h3>GDAI Decision Intelligence</h3>
+              <p class="project-meta">GenBI app · Generative BI · Mobile + Windows</p>
             </div>
           </div>
           <p>
             Mobile (Flutter) and desktop (WinUI 3) interface for a generative Business
-            Intelligence platform. Decision-makers ask questions in natural language; a local LLM
+            Intelligence platform. Decision-makers ask questions in natural language; an LLM
             generates the corresponding SQL and returns results as Vega-Lite charts rendered in a
-            WebView. Fully on-premise, so no data ever leaves the client's infrastructure.
+            WebView. It can run fully on-premise with a local LLM (Ollama / vLLM), so data never
+            has to leave the client's infrastructure.
           </p>
           <div class="tags">
             <span>Flutter</span><span>WinUI 3</span><span>Ollama</span>
@@ -375,19 +477,20 @@
           <div class="project-header">
             <div class="project-icon">GCP</div>
             <div>
-              <h3>CDC Pipeline · GCP</h3>
-              <p class="project-meta">Real-time streaming · Google Cloud</p>
+              <h3>CDC &amp; API Ingestion · Multi-Cloud</h3>
+              <p class="project-meta">Real-time streaming · GCP · Azure · AWS</p>
             </div>
           </div>
           <p>
-            A real-time Change Data Capture pipeline: Debezium captures database changes,
-            publishes them to Google Pub/Sub, and Apache Beam (Dataflow) processes and loads them
-            into BigQuery. Key engineering point: designed an automatic schema-evolution
-            mechanism handling <code>ALTER TABLE</code> statements without pipeline interruption.
+            Real-time Change Data Capture from PostgreSQL, SQL Server and Oracle. On GCP, Debezium
+            publishes to Pub/Sub and Apache Beam (Dataflow) loads BigQuery in under 15 seconds,
+            with an automatic schema-evolution mechanism handling <code>ALTER TABLE</code>
+            statements without pipeline interruption. The same capture runs to Azure Event Hubs
+            and on an AWS EC2 VM, and a Cloud Run ETL ingests REST APIs.
           </p>
           <div class="tags">
-            <span>Debezium</span><span>Pub/Sub</span><span>Apache Beam</span>
-            <span>Dataflow</span><span>BigQuery</span>
+            <span>Debezium</span><span>Pub/Sub</span><span>Dataflow</span>
+            <span>BigQuery</span><span>Azure Event Hubs</span><span>Cloud Run</span>
           </div>
         </div>
 
@@ -508,10 +611,11 @@
         </div>
 
         <div class="skill-group">
-          <h3>Data Engineering</h3>
+          <h3>Data Engineering & BI</h3>
           <div class="tags">
             <span>Apache Kafka</span><span>Debezium</span><span>Apache Spark</span>
-            <span>dbt</span><span>DLT</span><span>Apache NiFi</span><span>Apache Airflow</span>
+            <span>dbt</span><span>Dataform</span><span>DLT</span><span>Apache NiFi</span>
+            <span>Apache Airflow</span><span>Medallion Architecture</span><span>Superset</span>
           </div>
         </div>
 
@@ -519,7 +623,8 @@
           <h3>Storage & Lakehouse</h3>
           <div class="tags">
             <span>MinIO</span><span>SeaweedFS</span><span>Apache Doris</span>
-            <span>ClickHouse</span><span>PostgreSQL</span><span>BigQuery</span><span>Qdrant</span>
+            <span>ClickHouse</span><span>PostgreSQL</span><span>SQL Server</span>
+            <span>Oracle</span><span>BigQuery</span><span>Qdrant</span>
           </div>
         </div>
 
@@ -527,14 +632,15 @@
           <h3>Cloud & APIs</h3>
           <div class="tags">
             <span>GCP Pub/Sub</span><span>Dataflow</span><span>Apache Beam</span>
-            <span>BigQuery</span><span>Cloud Storage</span><span>REST API</span>
+            <span>BigQuery</span><span>Cloud Run</span><span>Cloud Storage</span>
+            <span>Azure Event Hubs</span><span>AWS EC2</span><span>REST API</span>
           </div>
         </div>
 
         <div class="skill-group">
           <h3>AI & LLM</h3>
           <div class="tags">
-            <span>Ollama</span><span>vLLM</span><span>MLflow</span>
+            <span>Ollama</span><span>vLLM</span><span>Text-to-SQL</span><span>MLflow</span>
             <span>XGBoost</span><span>Qdrant</span><span>RAG</span><span>Vega-Lite</span>
           </div>
         </div>
@@ -542,8 +648,18 @@
         <div class="skill-group">
           <h3>DevOps & Infrastructure</h3>
           <div class="tags">
-            <span>Docker</span><span>Kubernetes</span><span>Keycloak</span>
-            <span>Grafana</span><span>Prometheus</span><span>ELK Stack</span>
+            <span>Docker</span><span>Kubernetes</span><span>Helm</span><span>Terraform</span>
+            <span>Keycloak SSO & IAM</span><span>Grafana</span><span>Prometheus</span>
+            <span>ELK Stack</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Leadership & Delivery</h3>
+          <div class="tags">
+            <span>End-to-End Project Leadership</span><span>Architecture Decisions</span>
+            <span>Standards & Documentation</span><span>Code Review & Mentoring</span>
+            <span>Agile Scrum</span>
           </div>
         </div>
 
@@ -571,7 +687,7 @@
   <section id="contact">
     <div class="container">
       <h2 class="section-title">Contact</h2>
-      <p class="section-subtitle">Open to opportunities in Front Office / Trading Tools Development, Data Engineering, and AI-driven Architecture, including international placements (V.I.E.).</p>
+      <p class="section-subtitle">Open to opportunities in Data &amp; AI Architecture, Data Engineering, and Front Office / Trading Tools Development, including international placements (V.I.E.).</p>
       <div class="contact-grid">
         <a href="mailto:nelsmallchrist@gmail.com" class="contact-card">
           <div class="contact-icon-wrap">@</div>
